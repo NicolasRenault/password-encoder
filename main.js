@@ -8,7 +8,7 @@ const nbMove = 63;
 button.addEventListener("click", moveCharUnicode);
 
 function moveCharUnicode() {
-	const value = input.value;
+	const value = input.value.trim();
 
 	input.classList.remove("blinkGreen");
 	textOutput.classList.remove("blinkGreen");
