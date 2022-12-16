@@ -10,10 +10,21 @@
   animation: blinkingRed 1.5s ease-in-out;
 }
 
+.blinkGreen.fadeOut {
+  animation: blinkingGreen 1s ease-in-out, 3s ease 0s normal forwards 1 fadeOut;
+}
+
 @keyframes blinkingGreen {
   50% {@apply border-green-400 text-green-400}
 }
 
 @keyframes blinkingRed {
   50% {@apply border-red-400 text-red-400}
+}
+
+@keyframes fadeOut {
+  0% {@apply opacity-100}
+  50% {@apply opacity-100}
+  75% {@apply opacity-100}
+  100% {@apply opacity-0}
 }
