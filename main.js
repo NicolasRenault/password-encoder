@@ -13,6 +13,7 @@ function moveCharUnicode() {
 	input.classList.remove("blinkGreen");
 	textOutput.classList.remove("blinkGreen");
 	textOutput.classList.remove("blinkRed");
+	textOutput.classList.remove("fadeOut");
 
 	if (value == null || value == "") {
 		input.value = "";
@@ -42,7 +43,7 @@ function moveCharUnicode() {
 		.then(() => {
 			console.log("Text copied to clipboard...");
 			textOutput.innerHTML = "Text copied to clipboard !";
-			textOutput.classList.add("blinkGreen");
+			textOutput.classList.add("blinkGreen", "fadeOut");
 			input.classList.add("blinkGreen");
 		})
 		.catch((err) => {
