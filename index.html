@@ -17,10 +17,6 @@
 	<body
 		class="flex h-screen max-h-screen min-h-screen justify-center overflow-hidden bg-zinc-900 p-10 pt-24 font-mono text-zinc-100 selection:bg-zinc-500 sm:items-center sm:pt-10 lg:p-0"
 	>
-		<noscript>
-			You need to eneble Javascript on your browser for the website to
-			work
-		</noscript>
 		<div class="w-full max-w-4xl">
 			<header class="mb-12 w-full text-5xl">
 				<h1 class="font-bold">Passwd generator</h1>
@@ -36,6 +32,10 @@
 			</header>
 
 			<section id="app" class="flex text-2xl text-zinc-400">
+				<noscript class="text-red-400">
+					You need to enable Javascript on your browser for the
+					website to work
+				</noscript>
 				<form
 					onsubmit="return false;"
 					class="w-full pb-3"
