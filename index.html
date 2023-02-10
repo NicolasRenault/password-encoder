@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="author" content="Nicolas Renault">
-    <meta charset="utf-8"/>
-    <meta name="description" content="Encoded text generator that you can use for your password">
-    <meta name="keywords" content="Password, Encoding, Nicolas Renault">
-    <link rel="icon" href="/lock.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Passwd generator</title>
-    <script type="module" src="/main.js"></script>
-  </head>
+	<head>
+		<meta name="author" content="Nicolas Renault" />
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="Encoded text generator that you can use for your password"
+		/>
+		<meta name="keywords" content="Password, Encoding, Nicolas Renault" />
+		<link rel="icon" href="/lock.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Passwd generator</title>
+		<script type="module" src="/main.js"></script>
+	</head>
 
-  <body class="bg-zinc-900 text-zinc-100 selection:bg-zinc-500 font-mono h-screen max-h-screen min-h-screen overflow-hidden flex justify-center sm:items-center p-10 pt-24 sm:pt-10 lg:p-0">
-    <div class="w-full max-w-4xl">
-      <header class="mb-12 text-5xl w-full">
-        <h1 class="font-bold">Passwd generator</h1>
-        <a href="https://nicolasrenault.com" target="_blank" tabindex="-1">
-          <span class="text-2xl text-zinc-300 underline">By Nicolas Renault</span>
-        </a>
-      </header>
+	<body
+		class="flex h-screen max-h-screen min-h-screen justify-center overflow-hidden bg-zinc-900 p-10 pt-24 font-mono text-zinc-100 selection:bg-zinc-500 sm:items-center sm:pt-10 lg:p-0"
+	>
+		<div class="w-full max-w-4xl">
+			<header class="mb-12 w-full text-5xl">
+				<h1 class="font-bold">Passwd generator</h1>
+				<a
+					href="https://nicolasrenault.com"
+					target="_blank"
+					tabindex="-1"
+				>
+					<span class="text-2xl text-zinc-300 underline"
+						>By Nicolas Renault</span
+					>
+				</a>
+			</header>
 
-      <section id="app" class="flex text-zinc-400 text-2xl ">
-        <form onsubmit="return false;" class="pb-3 w-full" autocomplete="off">
-          <input id="input-password" type="text" placeholder="type here" class="bg-transparent border-b border-zinc-400 selection:bg-opacity-50 w-44 sm:w-auto outline-none"/>
-          <button id="validate-button" class="grayscale">✔️</button>
-        </form>
-      </section>
-      <span id="simple-text" class="text-zinc-400 text-2xl"></span>
-    </div>
-  </body>
+			<section id="app" class="flex text-2xl text-zinc-400">
+				<form
+					onsubmit="return false;"
+					class="w-full pb-3"
+					autocomplete="off"
+				>
+					<input
+						id="input-password"
+						type="text"
+						placeholder="type here"
+						class="w-44 border-b border-zinc-400 bg-transparent outline-none selection:bg-opacity-50 sm:w-auto"
+					/>
+					<button id="validate-button" class="grayscale">✔️</button>
+				</form>
+			</section>
+			<span id="simple-text" class="text-2xl text-zinc-400"></span>
+		</div>
+	</body>
 </html>

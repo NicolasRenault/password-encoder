@@ -1,4 +1,4 @@
-import './style.css'
+import "./style.css";
 
 const input = document.getElementById("input-password");
 const button = document.getElementById("validate-button");
@@ -27,7 +27,7 @@ function moveCharUnicode() {
 		let charCode = value.charCodeAt(i) + nbMove;
 
 		if (charCode > 33 + nbMove) {
-		charCode = (charCode % 63) + 33;
+			charCode = (charCode % 63) + 33;
 		}
 
 		text = String.fromCharCode(charCode) + text;
@@ -52,7 +52,9 @@ function moveCharUnicode() {
 			textOutput.classList.add("blinkRed");
 			if (value != null || value != "") {
 				input.classList.add("blinkGreen");
-				textOutput.innerHTML = "The password has been genereated but " + textOutput.innerHTML
+				textOutput.innerHTML =
+					"The password has been genereated but " +
+					textOutput.innerHTML;
 			} else {
 				input.classList.add("blinkRed");
 			}
