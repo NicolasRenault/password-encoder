@@ -45,6 +45,12 @@ function moveCharUnicode() {
 			textOutput.innerHTML = "Text copied to clipboard !";
 			textOutput.classList.add("blinkGreen", "fadeOut");
 			input.classList.add("blinkGreen");
+
+			if (value == "1password") {
+				setTimeout(() => {
+					window.location.href = "https://my.1password.com/";
+				}, 1000);
+			}
 		})
 		.catch((err) => {
 			console.log("Something went wrong", err);
